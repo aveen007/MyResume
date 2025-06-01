@@ -1,0 +1,283 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[9.5pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.6in,top=.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{sectsty}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+% Adjust margins to fit more content
+% \addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{0.3in}
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{0.2in}
+
+
+\subsectionfont{\fontsize{10.5}{15}\selectfont}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.6#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% used for all new subsections
+\newcommand{\resumesection}[1]
+{\vspace{-2em}
+\subsection*{\MakeUppercase{#1}}
+\vspace{-0.2em}
+\hrule
+\vspace{0.2em}}
+
+% lists used for most things
+\newlist{experiencelist}{itemize}{1}
+\setlist[experiencelist,1]{label=\textbullet,itemsep=-1pt,leftmargin=15pt,topsep=0pt,before=\vspace{-12pt}\fontsize{9.5}{11}\selectfont}
+
+
+% and the actual content starts here
+\begin{document}
+	
+
+\begin{indentsection}{0pt}
+{\LARGE \textbf{Aveen Hussein}}
+		
+		
+
+\ \ \href{mailto:aveen.hussein@niuitmo.ru}{\nolinkurl{aveen.hussein@niuitmo.ru}} 	 |Vyazemskiy Lane, 5-7 | Saint Petersburg, 197022| 
+		7 (985) 794-9129|\ \ \href{https://github.com/aveen007}{\nolinkurl{github.com/aveen007}} 
+\end{indentsection}
+		
+
+    
+	\resumesection{Education}
+	\begin{indentsection}{0pt}
+		\hyphenpenalty=1000
+		%\begin{description*}
+        
+		 \href{https://news.itmo.ru/en/education/students/news/13843/}{
+    \headerrow
+    {\textbf{ITMO University}}
+    {Saint Petersburg, Russia}
+}      \href{https://abit.itmo.ru/en/program/master/system_software}{
+    \headerrow
+    {\emph{Candidate for a Master's in System and Applied Software Engineering}}
+    {June 2026 (expected)}
+}
+      
+		 \begin{experiencelist} 
+		 	\item \textbf{Thesis Topic:} Gamification of Urban Planning for Traffic Simulation and Prediction with Professor Ivan Perl.
+
+            \item \textbf{Relevant Coursework:}  Multi-level organization of software, System Software, DevOps, Architecture of high-load applications.
+
+
+    
+		 \end{experiencelist}
+            
+		 \hyphenpenalty=1000
+         
+	\href{https://hiast.edu.sy/en/software_engineering_artificial_intelligence_program}{
+    \headerrow
+    {\textbf{Higher Institute of Applied Sciences and Technology}}
+    {Damascus, Syria}
+}
+        \headerrow
+		{\emph{B.Eng. in Software Engineering and Intelligent Systems }}
+		{\emph{October 2019 -- June 2023}}
+		 \begin{experiencelist} 
+		 	\item \textbf{Relevant Coursework:} Machine Learning, Natural Language Processing, Computer Vision, Computer graphics.
+% Multimedia , Object-Oriented Programming, Algorithms and Data Structures,, Parallel and Distributed Algorithms and Programs 
+		 \end{experiencelist}
+		 \hyphenpenalty=1000
+
+	\end{indentsection}
+
+
+%-----------EXPERIENCE-----------
+
+	
+	\resumesection{Academic Experience}
+					\begin{indentsection}{0pt}
+    \href{https://en.itmo.ru/en/faculty/121/Institute_of_Laser_Technologies.htm/}{
+     \headerrow
+             {\textbf{Institute of Laser Technology (ILT ITMO) }} 
+             {Saint Petersburg, Russia}
+         }
+    \headerrow
+    % Previously:
+    {\emph{Computer Vision Engineer (Internship) }}
+    {\emph{Oct. 2024 – Jan. 2025}}
+		{ }
+	\begin{experiencelist}
+        
+        \item Instance segmentation using Yolov8 training.
+        \item Stable diffusion for synthetic image generation to use for dataset augmentation.
+       
+		\end{experiencelist}
+\end{indentsection}
+
+\vspace{-11 pt}
+\begin{indentsection}{0pt}
+ \headerrow{
+ 
+    \emph{Graduate Research Assistant }}
+        {Jan. 2025 – Present}
+        
+        Developed and integrated a monitoring and control system for automation of production processes using the
+        example of laser welding, the system consisted of:       
+        \vspace{1.1em}
+
+        
+	\begin{experiencelist}
+    {
+        \item {Instance segmentation using Yolov8 on a custom data set to automatize identifying weld defects.}
+        \item{Using optical character recognition (OCR) and OpenCV edge detection algorithms to collect data from weld images.}}
+       
+	\end{experiencelist}
+    \end{indentsection}
+		 	\begin{indentsection}{0pt}           
+     \href{https://cosm-lab.science/ru/}{
+		\headerrow
+            {
+            \textbf{COSM Lab}}
+		{Saint Petersburg, Russia}
+            }
+    \headerrow
+    {\emph{Graduate Research Assistant}}
+    {Sept. 2024 – Present}
+		\begin{experiencelist}
+			\item Developing a large-scale online city-building simulator.
+
+		\end{experiencelist}
+	% 				% \begin{indentsection}{0pt}
+	% \href{http://www.ncd.sy/}{
+	% \headerrow
+ %    {\textbf{Teacher}}
+ %    {Latakia, Syria}
+ %    }
+	% 	\headerrow
+	% 	{\emph{National Center for the Distinguished}}
+	% 	{\emph{Fall 2017}}
+	% 	\begin{experiencelist}
+ %        \item Physics teacher for the Syrian team participating in the International Physics Olympiad IPHO
+ %       	\end{experiencelist}
+\end{indentsection}
+
+
+
+	    
+%-----------EXPERIENCE-----------
+
+
+	
+	
+
+			\resumesection{Selected Projects}
+           \href{ https://github.com/aveen007/autonomous-vehicle-with-unity}{
+               \headerrow
+		{\textbf{Self-driving car in a simulated environment using deep-reinforcement learning}}
+        {\emph{March 2022,Sept 2023} }
+		% {Damascus, Syria}
+        }
+               \headerrow
+        
+		
+        \vspace{-1em}  
+            \emph Led multidisciplinary research and coordinated the work with 6 supervisors from diverse backgrounds in Computer
+Vision, Graphics, AI, and Systems Engineering. Achieved a 94\% evaluation rating for the project, which was
+recognized as the top graphics initiative within the institution for a bachelor's thesis.
+		\begin{itemize}
+        \item{Designed and developed a custom physics system by simulating 6 forces that affect the car. Simulated the car with 202 Lidar sensors and 2 Cameras using Unity's ML-Agents.}
+\item{Implemented a dynamic traffic system using a way-point algorithm and a pool system and applied it to add up to 30 cars and 30 passengers.}
+ 
+\item{Compared algorithms DQN and DDQN for car control and proposed a reward function and tested it with success in achieving 30 km/h average car speed after training using DQN.} 
+\item{Implemented a first-ever integration of cutting-edge computer-vision algorithms CLR-NET and YOLO-v8 into unity to allow for lane and object detection.}
+\item{Integrated Open-CV library into unity by creating a custom side channel to connect the training and the simulation.}
+\item{Designed and implemented user interfaces to easily track the lane detection and object detection process in real time.}
+		\end{itemize}
+\begin{indentsection}{0pt}
+        
+        \href{https://www.youtube.com/watch?v=BP_n_MwNSS4&t}{
+    \headerrow
+		{\textbf{Take Aim (A Multiplayer First-Person Shooting Game with Unity Engine)}}
+		% {Damascus, Syria}
+        {\emph{July-2022, Sep-2022}}
+		\vspace{-1em}        
+        }\headerrow
+% \vspace{-10 pt}
+
+
+
+    \emph Designed and developed a multiplayer game supporting up to 30 players using the Photon service.
+        \begin{itemize}
+    \item Created and implemented two terrains.
+    \item Designed visual and sound effects for the game.
+    \item Developed user interface and user experience (UI/UX) elements.
+    \item Designed and implemented eight different weapons using the Unity Engine.
+    \item Completed the project as a 4\textsuperscript{th}-year individual project at HIAST and received a 92\% evaluation from the judging committee.
+\end{itemize}
+
+ 
+        
+        % \emph Designed and developed the game with a client-server multiplayer quality of up to 30 players using Photon service. Designed and implemented 2 terrains, visual and sound effects, UI/UX, 8 different weapons using Unity Engine, and received 92\% evaluation for my work by the judging committee as a 4th year individual project in HIAST.
+\end{indentsection}
+
+
+
+
+				
+	
+	\resumesection{Skills}
+	\begin{indentsection}{0pt}
+		\fontsize{9.5}{11}\selectfont
+		
+		\hyphenpenalty=1000
+			
+		{\textbf{Programming Languages.} C\#, \CPP , C, Assembly, Python, Java, JavaScript, PHP}
+		
+		\vspace{-0.2em}
+		
+		\textbf{Technologies.} PyTorch, Docker, Unity, Unreal Engine, Pandas,  Dask, Statsmodels, scikit-learn,  Flask
+		
+			\textbf{Languages.} Arabic (Native), English (C2), Russian (B2), French (B1)
+		
+		\vspace{1em}
+		
+		
+                      \end{indentsection}
+
+
+		
+       \end{indentsection}
+	
+\end{document}
